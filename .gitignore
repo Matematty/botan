@@ -4,6 +4,7 @@
 *.keras
 scripts/__pycache__/
 scripts/*.keras
+scripts/.streamlit/secrets.toml
 
 
 # --- PIPENV / VIRTUAL ENV ---

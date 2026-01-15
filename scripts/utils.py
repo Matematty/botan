@@ -85,7 +85,7 @@ def load_model():
 model = load_model() # the huggingface model path
 
 # this function is for predicting the disease 
-def predictd_disease(image):
+def predict_disease(image):
     model = load_model()
 
    # model = tf.keras.models.load_model(path) # this loads the trained model
