@@ -157,8 +157,8 @@ def say_disease(disease_index,audio_file):
         st.write(text_to_speak)
 
         # this calls the speak function 
-        speech = speak_text(text_to_speak,file_path=audio_file)
-        #speech = speak_text_gtts(text_to_speak,file_path=audio_file)
+        #speech = speak_text(text_to_speak,file_path=audio_file)
+        speech = speak_text_gtts(text_to_speak,file_path=audio_file)
         #st.write(text_to_speak)
         
         return speech
@@ -169,8 +169,8 @@ def say_disease(disease_index,audio_file):
         st.write(text_to_speak)
         
         # this calls the speak function 
-        speech = speak_text(text_to_speak,file_path=audio_file)
-        #speech = speak_text_gtts(text_to_speak,file_path=audio_file\)
+        #speech = speak_text(text_to_speak,file_path=audio_file)
+        speech = speak_text_gtts(text_to_speak,file_path=audio_file)
         #st.write(text_to_speak)
         
         return speech
@@ -180,8 +180,8 @@ def say_disease(disease_index,audio_file):
         text_description = disease_description.get(disease_index)
         text_to_speak = f"The detected disease is {disease_name} , {text_description}" 
         st.write(text_to_speak)      
-        speech = speak_text(text_to_speak,file_path=audio_file)
-        #speech = speak_text_gtts(text_to_speak,file_path=audio_file)
+        #speech = speak_text(text_to_speak,file_path=audio_file)
+        speech = speak_text_gtts(text_to_speak,file_path=audio_file)
         #st.write(text_to_speak)
         
         return speech
@@ -190,8 +190,8 @@ def say_disease(disease_index,audio_file):
         text_description = disease_description.get(disease_index)
         text_to_speak = f"The detected disease is {disease_name} , {text_description}"
         st.write(text_to_speak)
-        speech = speak_text(text_to_speak,audio_file)
-        #speech = speak_text_gtts(text_to_speak,file_path=audio_file)
+        #speech = speak_text(text_to_speak,audio_file)
+        speech = speak_text_gtts(text_to_speak,file_path=audio_file)
         #st.write(text_to_speak)
 
         return speech
@@ -200,14 +200,14 @@ def say_disease(disease_index,audio_file):
         text_description = disease_description.get(disease_index)
         text_to_speak = f"The plant is healthy with no disease detected ,  {text_description}"
         st.write(text_to_speak)
-        speech = speak_text(text_to_speak,file_path=audio_file)
-        #speech = speak_text_gtts(text_to_speak,file_path=audio_file)
+        #speech = speak_text(text_to_speak,file_path=audio_file)
+        speech = speak_text_gtts(text_to_speak,file_path=audio_file)
         return speech
     else:
         text_to_speak = "The detected disease is unknown"
         st.write(text_to_speak)
-        speech = speak_text(text_to_speak,file_path=audio_file)
-        #speech = speak_text_gtts(text_to_speak,file_path=audio_file)
+        #speech = speak_text(text_to_speak,file_path=audio_file)
+        speech = speak_text_gtts(text_to_speak,file_path=audio_file)
         return speech
     
 
