@@ -1,7 +1,7 @@
 import os
 from PIL import Image
 import numpy as np  
-from utils import resize_and_rescale,predict_disease,speak_text_gtts,say_disease
+from utils import predict_disease, say_disease
 import streamlit as st
 
 
