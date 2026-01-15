@@ -17,6 +17,7 @@ python-dotenv = "*"
 pyttsx3 = "*"
 gtts = "*"
 huggingface-hub = "*"
+opencv-python-headless = "*"
 
 [dev-packages]
 
