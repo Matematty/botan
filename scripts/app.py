@@ -3,7 +3,7 @@ from PIL import Image
 import numpy as np  
 from utils import resize_and_rescale,predict_disease,speak_text_gtts,say_disease
 import streamlit as st
-#from utils import speak_text_gtts
+
 
 
    
