@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+streamlit = "*"
+pandas = "*"
+matplotlib = "*"
+seaborn = "*"
+scikit-learn = "*"
+tensorflow = "*"
+opencv-python = "*"
+pillow = "*"
+split-folders = "*"
+numpy = "*"
+python-dotenv = "*"
+pyttsx3 = "*"
+gtts = "*"
+huggingface-hub = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.13"

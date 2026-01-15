@@ -1,0 +1,23 @@
+# --- DATASET ---
+# Don't track the actual photos (they are too big)
+/dataset/
+*.keras
+scripts/__pycache__/
+scripts/*.keras
+
+
+# --- PIPENV / VIRTUAL ENV ---
+# Don't track the library files
+.venv/
+.env
+
+# --- PYTHON ---
+# Don't track temporary Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- SYSTEM ---
+# Don't track hidden system files
+.DS_Store
+Thumbs.db

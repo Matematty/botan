@@ -1,0 +1,16 @@
+# Plant Disease Detection AI Project
+# Dependencies for Data Processing, model and UI 
+
+streamlit
+pandas
+matplotlib
+seaborn
+scikit-learn
+numpy
+tensorflow
+opencv-python
+Pillow
+split-folders
+python-dotenv
+gtts
+huggingface_hub
