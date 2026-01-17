@@ -10,8 +10,8 @@ from io import BytesIO
 from huggingface_hub import hf_hub_download
 
 
-base_path = os.path.dirname(__file__)
-model_path  = os.path.join(base_path,"botaniq_model.keras")
+#base_path = os.path.dirname(__file__)
+#model_path  = os.path.join(base_path,"botaniq_model.keras")
 
 REPO_ID = "MateMatty01/BotanIQ_Model"
 FILENAME = "botaniq_model.keras"
@@ -82,22 +82,22 @@ def load_model():
     model = tf.keras.models.load_model(model_path)
     return model 
 
-local_model = tf.keras.models.load_model(model_path) # the local model path
-#model = load_model() # the huggingface model path
+#local_model = tf.keras.models.load_model(model_path) # the local model path
+model = load_model() # the huggingface model path
 
 # this function is for predicting the disease 
 def predict_disease(image):
-    #model = load_model()
+    model = load_model()
 
-    local_model = tf.keras.models.load_model(model_path) # this loads the trained model
+    #local_model = tf.keras.models.load_model(model_path) # this loads the trained model
 
 
     image_to_predict = resize_and_rescale(image) # this preprocesses the image
     #print(image_to_predict)
     # making prediction - checks if the image preprocessing was successful
     if image_to_predict is not None:
-        #prediction = model.predict(image_to_predict) # this makes the prediction
-        prediction = local_model.predict(image_to_predict) # this makes the prediction
+        prediction = model.predict(image_to_predict) # this makes the prediction
+        #prediction = local_model.predict(image_to_predict) # this makes the prediction
         print(prediction)
 
         predicted = np.argmax(prediction,axis=1) # this gets the index of the highest probability
