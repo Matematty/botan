@@ -58,12 +58,13 @@ def resize_and_rescale(image_path,target_size=(256,256)):
         resized_image = img.resize(target_size)
         #st.write(resized_image.size)
         #print(resized_image.size)
-        img_array = np.array(resized_image).astype('float32') / 255.0
-        img_array_e = np.expand_dims(img_array,axis=0)
+        #img_array = np.array(resized_image).astype('float32') / 255.0
+        #img_array_e = np.expand_dims(img_array,axis=0)
         print("array scaled successfully")
 
         # returns the resized and rescaled image 
-        return img_array_e
+        #return img_array_e
+        return resized_image
         
     except Exception as e:
         print(f"something happened{e}")
