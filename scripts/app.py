@@ -10,8 +10,8 @@ import streamlit as st
 
 # this is the interface of the app
 st.title("BOTANIQ")
-st.sidebar.title("About") 
-st.write("Upload an image of a plant leaf to detect diseases.")
+#st.sidebar.title("About") 
+st.write("Upload an image of a Tomato plant leaf to detect disease.")
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"]) 
 process_button = st.button("submit",help="use this button to send ")
 
